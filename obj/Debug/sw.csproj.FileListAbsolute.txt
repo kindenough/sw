@@ -1,0 +1,11 @@
+F:\Projects\shuiwu\sw\sw\bin\sw.dll
+F:\Projects\shuiwu\sw\sw\bin\sw.pdb
+F:\Projects\shuiwu\sw\sw\obj\Debug\sw.csprojResolveAssemblyReference.cache
+F:\Projects\shuiwu\sw\sw\obj\Debug\sw.dll
+F:\Projects\shuiwu\sw\sw\obj\Debug\sw.pdb
+F:\github\html\sw\sw\bin\sw.dll.config
+F:\github\html\sw\sw\bin\sw.dll
+F:\github\html\sw\sw\bin\sw.pdb
+F:\github\html\sw\sw\obj\Debug\sw.csprojResolveAssemblyReference.cache
+F:\github\html\sw\sw\obj\Debug\sw.dll
+F:\github\html\sw\sw\obj\Debug\sw.pdb

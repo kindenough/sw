@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=false" name="viewport" />-->
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+
+    <!--版本：arcgis3.22-->
+    <link rel="stylesheet" href="https://js.arcgis.com/3.22/esri/css/esri.css">
+    <script src="https://js.arcgis.com/3.22/"></script>
+
+    <script src="map.js"></script>
+    <title>地图</title>
+    <style type="text/css">
+        html, body {
+            height: 100%; margin: 0px; padding: 0px;
+        }
+        #map_canvas { height: 100%; }
+        @media print
+        {
+            html, body { height: auto; }
+            #map_canvas { height: 650px; }
+        }
+    </style>
+</head>
+<body onload="initialize()">
+    
+    <div id="map_canvas">
+    </div>
+    <div style="position:absolute;top:20px;right:20px;z-index:99999;">
+        <button onclick="showXMMAP()">地图</button>
+        <button onclick="showDOMMAP()">卫星</button>
+    </div>
+</body>
+</html>
