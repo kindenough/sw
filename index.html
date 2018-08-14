@@ -28,7 +28,6 @@
 
 
 
-
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
@@ -55,7 +54,7 @@
         <div class="left-side-inner">
 
             <!-- visible to small devices only -->
-            <!--<div class="visible-xs hidden-sm hidden-md hidden-lg">
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
                 <div class="media logged-user">
                     <img alt="" src="images/photos/user-avatar.png" class="media-object">
                     <div class="media-body">
@@ -70,7 +69,7 @@
                   <li><a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a></li>
                   <li><a href="#"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a></li>
                 </ul>
-            </div>-->
+            </div>
 
             <!--sidebar nav start-->
             <ul class="nav nav-pills nav-stacked custom-nav">
@@ -84,23 +83,23 @@
                     </ul>
                 </li>
                 <li class="menu-list">
-                    <a href="javascript:;"><i class="fa fa-bullhorn"></i> <span>报警中心</span></a>
+                    <a href="javascript:;"><i class="fa fa-book"></i> <span>报警中心</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="javascript:void()">警告事件</a></li>
+                        <li><a href="告警事件.html">警告事件</a></li>
                         <li><a href="javascript:void()">短信通知</a></li>
                         <li><a href="javascript:void()">时间规则</a></li>
 
                     </ul>
                 </li>
                 <li class="menu-list">
-                    <a href="javascript:;"><i class="fa fa-th-list"></i> <span>统计分析</span></a>
+                    <a href="javascript:;"><i class="fa fa-cogs"></i> <span>统计分析</span></a>
                     <ul class="sub-menu-list">
                         <li><a href="javascript:void()">站房统计</a></li>
                         <li><a href="javascript:void()">警告分析</a></li>
                     </ul>
                 </li>
                 <li class="menu-list">
-                    <a href="javascript:;"><i class="fa fa-book"></i> <span>用户中心</span></a>
+                    <a href="javascript:;"><i class="fa fa-bullhorn"></i> <span>用户中心</span></a>
                     <ul class="sub-menu-list">
                         <li><a href="javascript:void()">账号管理</a></li>
                         <li><a href="javascript:void()">用户管理</a></li>
@@ -108,7 +107,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:;"><i class="fa fa-cogs"></i> <span>系统设置</span></a>
+                    <a href="javascript:;"><i class="fa fa-envelope"></i> <span>系统设置</span></a>
                 </li>
             </ul>
             <!--sidebar nav end-->
@@ -120,6 +119,7 @@
     <!-- main content start-->
     <div class="main-content" >
 
+
         <!-- header section start-->
         <div class="header-section">
 
@@ -128,13 +128,13 @@
             <!--toggle button end-->
 
             <!--search start-->
-            <!--<form class="searchform" action="index.html" method="post">
-                <input type="text" class="form-control" name="keyword" placeholder="Search here..." />
-            </form>-->
+            <form class="searchform" action="index.html" method="post">
+                <input type="text" class="form-control" name="keyword" placeholder="输入名称搜索..." />
+            </form>
             <!--search end-->
 
             <!--notification menu start -->
-            <!--<div class="menu-right">
+            <div class="menu-right">
                 <ul class="notification-menu">
                     <li>
                         <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
@@ -319,129 +319,40 @@
                     </li>
 
                 </ul>
-            </div>-->
+            </div>
             <!--notification menu end -->
 
         </div>
         <!-- header section end-->
 
         <!-- page heading start-->
-        <div class="page-heading">
-            <h3>
-                站房总数 57
-            </h3>
-            <ul class="breadcrumb">
-                <li>
-                    <a href="#">污水智慧物联网</a>
-                </li>
-                <li class="active">站房信息</li>
-            </ul>
-            <div class="state-info">
-                <section class="panel">
-                    <div class="panel-body">
-                        <div class="summary">
-                            <span>站房(正常/告警)</span>
-                            <h3 class="red-txt">14 / 43</h3>
-                        </div>
-                        <div id="income" class="chart-bar"></div>
-                    </div>
-                </section>
-                <section class="panel">
-                    <div class="panel-body">
-                        <div class="summary">
-                            <span>设备(在线/离线)</span>
-                            <h3 class="green-txt">2 / 50</h3>
-                        </div>
-                        <div id="expense" class="chart-bar"></div>
-                    </div>
-                </section>
-            </div>
-        </div>
         <!-- page heading end-->
 
         <!--body wrapper start-->
-        <div class="wrapper">
+
+        <div class="wrapper" style="padding:0">
+            
             <div class="row">
-                <div class="col-md-12">
-                    <div class="row state-overview">
-                        <div class="col-md-4 col-xs-12 col-sm-4">
-                            <div class="panel purple">
-                                <div class="symbol">
-                                    <i class="fa fa-gavel"></i>
-                                </div>
-                                <div class="state-value">
-                                    <div class="value">230</div>
-                                    <div class="title">清水泵(台)</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12 col-sm-4">
-                            <div class="panel red">
-                                <div class="symbol">
-                                    <i class="fa fa-tags"></i>
-                                </div>
-                                <div class="state-value">
-                                    <div class="value">90</div>
-                                    <div class="title">加药泵(台)</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12 col-sm-4">
-                            <div class="panel blue">
-                                <div class="symbol">
-                                    <i class="fa fa-money"></i>
-                                </div>
-                                <div class="state-value">
-                                    <div class="value">224</div>
-                                    <div class="title">鼓风机(台)</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-         <!--       <div class="col-md-6">
-                    <div class="panel deep-purple-box">
+                <div class="col-sm-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            地图
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                        </header>
                         <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-7 col-sm-7 col-xs-7">
-                                    <div id="graph-donut" class="revenue-graph"></div>
-
-                                </div>
-                                <div class="col-md-5 col-sm-5 col-xs-5">
-                                    <ul class="bar-legend">
-                                        <li><span class="blue"></span> Open rate</li>
-                                        <li><span class="green"></span> Click rate</li>
-                                        <li><span class="purple"></span> Share rate</li>
-                                        <li><span class="red"></span> Unsubscribed rate</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <div id="map" class="vmaps"></div>
                         </div>
-                    </div>
-                </div>-->
-            </div>
-            <div class="row">
-                <div>
-                    <ul class="revenue-nav" style="float:left">
-                    <li class="active"><a href="#">今日</a></li>
-                    <li><a href="#">本月</a></li>
-                    <li><a href="#">今年</a></li>
-                    <li><a href="#">历史</a></li>
-                    </ul>
-                </div>
-                <div style="float:left;margin:15px;">
-                    <input type="date" />
+                    </section>
                 </div>
             </div>
-            <div class="row">
-    <div id="echarts1" style="width: 100%;height:400px;"></div>
-            </div>
-
         </div>
         <!--body wrapper end-->
 
         <!--footer section start-->
-        <!--<footer>
+<!--        <footer>
             2014 &copy; AdminEx by ThemeBucket
         </footer>-->
         <!--footer section end-->
@@ -450,7 +361,6 @@
     </div>
     <!-- main content end-->
 </section>
-
 <!-- Placed js at the end of the document so the pages load faster -->
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
@@ -478,8 +388,8 @@
 
 
 <!--Morris Chart-->
-<script src="js/morris-chart/morris.js"></script>
-<script src="js/morris-chart/raphael-min.js"></script>
+<!--<script src="js/morris-chart/morris.js"></script>
+<script src="js/morris-chart/raphael-min.js"></script>-->
 
 <!--Calendar-->
 <script src="js/calendar/clndr.js"></script>
@@ -492,35 +402,34 @@
 
 <!--Dashboard Charts-->
 <!--<script src="js/dashboard-chart-init.js"></script>-->
-    <script src="js/hsx/echarts.js"></script>
-        <script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('echarts1'));
+    
+    
+    <script src="https://webapi.amap.com/maps?v=1.4.9&key=您申请的key值"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <!--map-->
+    <script>
+        var marker, map;
+        $(function () {
+            map = new AMap.Map("map", {
+                resizeEnable: true,
+                center: [118.186068, 24.481014],
+                zoom: 13
+            });
+            addMarker();
+        });
 
-        // 指定图表的配置项和数据
-        var option = {
-            title: {
-                text: '流量(立方米/小时)'
-            },
-            tooltip: {},
-            legend: {
-                data:['流量']
-            },
-            xAxis: {
-                data: ['0点', '2点', '4点', '6点', '8点', '10点', '12点', '14点', '16点', '18点', '20点', '22点','24点'] 
-            },
-            yAxis: {},
-            series: [{
-                name: '流量',
-                type: 'bar',
-                data: [5, 20, 36, 10, 10, 20, 5, 20, 36, 10, 10, 20, 20]
-            }]
-        };
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
+        function addMarker() {
+            marker = new AMap.Marker({
+                icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+                position: [118.18464, 24.48092],
+                label: { content: '顶许社', offset: new AMap.Pixel(-10, -22) }
+            });
+            marker.setMap(map);
+            marker.on("click", function () {
+                //self.location = "站点.html";
+                window.open("站点.html");
+            });
+        }
     </script>
-
-
 </body>
 </html>
