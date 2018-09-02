@@ -166,6 +166,8 @@
     
     <script src="https://webapi.amap.com/maps?v=1.4.9&key=6ad1e3e826b87e8197c2ddf652686616"></script>
     <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="js/hsx/data.js"></script>
+
     <!--map-->
     <script>
         var marker, map;
@@ -176,6 +178,7 @@
                 zoom: 13
             });
             addMarker();
+            addMarkers();
 
             document.getElementById('map').style.height = $(window).height() + 'px';
         });
@@ -190,6 +193,26 @@
             marker.on("click", function () {
                 //self.location = "站点.html";
                 window.open("站点.html");
+            });
+        }
+
+        function addMarkers() {
+            $.each(g_zds, function (index, info) {
+                var lst = info.split(',');
+                var x = lst[0];
+                var y = lst[1];
+                var name = lst[2];
+
+                var newmarker = new AMap.Marker({
+                    icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+                    position: [x,y],
+                    label: { content: name, offset: new AMap.Pixel(-10, -22) }
+                });
+                newmarker.setMap(map);
+                newmarker.on("click", function () {
+                //self.location = "站点.html";
+                window.open("站点.html");
+                });
             });
         }
     </script>
