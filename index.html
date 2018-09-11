@@ -33,6 +33,10 @@
   <script src="js/html5shiv.js"></script>
   <script src="js/respond.min.js"></script>
   <![endif]-->
+  <style>
+      body{font-family:微软雅黑;}
+  </style>
+
 </head>
 
 <body class="sticky-header">
@@ -171,6 +175,7 @@
     <!--map-->
     <script>
         var marker, map;
+        var arrMarker = [];
         $(function () {
             map = new AMap.Map("map", {
                 resizeEnable: true,
@@ -206,15 +211,86 @@
                 var newmarker = new AMap.Marker({
                     icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
                     position: [x,y],
-                    label: { content: name, offset: new AMap.Pixel(-10, -22) }
+                    label: { content: name, offset: new AMap.Pixel(-10, -22), name: name },
+                    name:name
                 });
+                arrMarker[name] = newmarker;
                 newmarker.setMap(map);
-                newmarker.on("click", function () {
+                newmarker.on("click", function (ret) {
                 //self.location = "站点.html";
-                window.open("站点.html");
+                    //window.open("站点.html");
+                    var m = arrMarker[ret.target.B.name];
+                    var w = getstr(true) + "<button class=\"btn btn-primary\">详情</button> <button class=\"btn btn-primary\" onclick=\"closeW('" + ret.target.B.name + "')\">关闭</button>";
+                    m.setLabel({ content: w, offset: new AMap.Pixel(20, 0) });
+                    debugger;
                 });
             });
+        }
+
+        function closeW(name) {
+            var m = arrMarker[name];
+            m.setLabel({ content: name, offset: new AMap.Pixel(-10, -22) });
+        }
+        function getstr(t) {
+            return getstr1(t) + getstr2(t) + getstr3(t) + getstr4(t) + getstr5(t) + getstr6(t) + getstr7(t) + getstr8(t);
+        }
+        function getstr1(t) {
+            if (t) {
+                return "1#提升泵：<button class=\"btn btn-danger\">正常</button><br>";
+            }
+            return "1#提升泵：<button class=\"btn btn-success\">正常</button><br>";
+        }
+
+        function getstr2(t) {
+            if (t) {
+                return "2#提升泵：<button class=\"btn btn-danger\">正常</button><br>";
+            }
+            return "2#提升泵：<button class=\"btn btn-success\">正常</button><br>";
+        }
+
+        function getstr3(t) {
+            if (t) {
+                return "1#风机：<button class=\"btn btn-danger\">正常</button><br>";
+            }
+            return "1#风机：<button class=\"btn btn-success\">正常</button><br>";
+        }
+
+        function getstr4(t) {
+            if (t) {
+                return "2#风机：<button class=\"btn btn-danger\">正常</button><br>";
+            }
+            return "2#风机：<button class=\"btn btn-success\">正常</button><br>";
+        }
+
+        function getstr5(t) {
+            if (t) {
+                return "1#排放泵：<button class=\"btn btn-danger\">正常</button><br>";
+            }
+            return "1#排放泵：<button class=\"btn btn-success\">正常</button><br>";
+        }
+
+        function getstr6(t) {
+            if (t) {
+                return "2#排放泵：<button class=\"btn btn-danger\">正常</button><br>";
+            }
+            return "2#排放泵：<button class=\"btn btn-success\">正常</button><br>";
+        }
+
+        function getstr7(t) {
+            if (t) {
+                return "污泥回流泵：<button class=\"btn btn-danger\">正常</button><br>";
+            }
+            return "污泥回流泵：<button class=\"btn btn-success\">正常</button><br>";
+        }
+
+        function getstr8(t) {
+            if (t) {
+                return "加药泵：<button class=\"btn btn-danger\">正常</button><br>";
+            }
+            return "加药泵：<button class=\"btn btn-success\">正常</button><br>";
         }
     </script>
 </body>
 </html>
+
+NULL
