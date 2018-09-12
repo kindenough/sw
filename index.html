@@ -220,7 +220,7 @@
                 //self.location = "站点.html";
                     //window.open("站点.html");
                     var m = arrMarker[ret.target.B.name];
-                    var w = getstr(true) + "<button class=\"btn btn-primary\">详情</button> <button class=\"btn btn-primary\" onclick=\"closeW('" + ret.target.B.name + "')\">关闭</button>";
+                    var w = getstr(false) + "<button class=\"btn btn-primary\">详情</button> <button class=\"btn btn-primary\" onclick=\"closeW('" + ret.target.B.name + "')\">关闭</button>";
                     m.setLabel({ content: w, offset: new AMap.Pixel(20, 0) });
                     debugger;
                 });
@@ -236,56 +236,56 @@
         }
         function getstr1(t) {
             if (t) {
-                return "1#提升泵：<button class=\"btn btn-danger\">正常</button><br>";
+                return "1#提升泵：<button class=\"btn btn-danger\">故障</button><br>";
             }
             return "1#提升泵：<button class=\"btn btn-success\">正常</button><br>";
         }
 
         function getstr2(t) {
             if (t) {
-                return "2#提升泵：<button class=\"btn btn-danger\">正常</button><br>";
+                return "2#提升泵：<button class=\"btn btn-danger\">故障</button><br>";
             }
             return "2#提升泵：<button class=\"btn btn-success\">正常</button><br>";
         }
 
         function getstr3(t) {
             if (t) {
-                return "1#风机：<button class=\"btn btn-danger\">正常</button><br>";
+                return "1#风机：<button class=\"btn btn-danger\">故障</button><br>";
             }
             return "1#风机：<button class=\"btn btn-success\">正常</button><br>";
         }
 
         function getstr4(t) {
             if (t) {
-                return "2#风机：<button class=\"btn btn-danger\">正常</button><br>";
+                return "2#风机：<button class=\"btn btn-danger\">故障</button><br>";
             }
             return "2#风机：<button class=\"btn btn-success\">正常</button><br>";
         }
 
         function getstr5(t) {
             if (t) {
-                return "1#排放泵：<button class=\"btn btn-danger\">正常</button><br>";
+                return "1#排放泵：<button class=\"btn btn-danger\">故障</button><br>";
             }
             return "1#排放泵：<button class=\"btn btn-success\">正常</button><br>";
         }
 
         function getstr6(t) {
             if (t) {
-                return "2#排放泵：<button class=\"btn btn-danger\">正常</button><br>";
+                return "2#排放泵：<button class=\"btn btn-danger\">故障</button><br>";
             }
             return "2#排放泵：<button class=\"btn btn-success\">正常</button><br>";
         }
 
         function getstr7(t) {
             if (t) {
-                return "污泥回流泵：<button class=\"btn btn-danger\">正常</button><br>";
+                return "污泥回流泵：<button class=\"btn btn-danger\">故障</button><br>";
             }
             return "污泥回流泵：<button class=\"btn btn-success\">正常</button><br>";
         }
 
         function getstr8(t) {
             if (t) {
-                return "加药泵：<button class=\"btn btn-danger\">正常</button><br>";
+                return "加药泵：<button class=\"btn btn-danger\">故障</button><br>";
             }
             return "加药泵：<button class=\"btn btn-success\">正常</button><br>";
         }
